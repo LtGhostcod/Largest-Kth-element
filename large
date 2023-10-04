@@ -1,0 +1,17 @@
+public class large {
+    public static int larrgest(int arr[], int n){
+        int largest = 0;
+        int i ;
+        for ( i = 0; i < n; i++)
+            if (arr[i] > largest)
+                largest = i;
+        return largest;
+    }
+    public static void main(String[] args) {
+        int[] arr = {40, 8, 50, 100};
+        int n = arr.length;
+        int largest = 0;
+
+        System.out.println(larrgest(arr, n));
+    }
+}
